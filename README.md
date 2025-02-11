@@ -1,0 +1,1 @@
+A launcher for LegacyShockwave aiming to implement the website functionalities into a WPF app. Open source and free forever. 
