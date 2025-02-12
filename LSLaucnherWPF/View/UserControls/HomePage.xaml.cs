@@ -35,6 +35,7 @@ namespace LSLaucnherWPF.View.UserControls
         }
         public void Cleanup()
         {
+            LSTrailer.Stop();
             LSTrailer.Dispose();
         }
     }
