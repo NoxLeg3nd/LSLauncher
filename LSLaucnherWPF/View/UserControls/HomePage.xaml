@@ -44,7 +44,6 @@
                     </TextBlock>
                 </StackPanel>
                 <wv2:WebView2 Name="LSTrailer" Width="500" Height="300"/>
-                
             </StackPanel>
         </ScrollViewer>
     </Grid>

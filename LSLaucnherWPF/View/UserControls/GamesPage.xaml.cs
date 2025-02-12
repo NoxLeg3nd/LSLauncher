@@ -16,14 +16,13 @@ using System.Windows.Shapes;
 namespace LSLaucnherWPF.View.UserControls
 {
     /// <summary>
-    /// Interaction logic for NavBar.xaml
+    /// Interaction logic for GamesPage.xaml
     /// </summary>
-    public partial class NavBar : UserControl
+    public partial class GamesPage : UserControl
     {
-        public NavBar()
+        public GamesPage()
         {
             InitializeComponent();
         }
-
     }
 }

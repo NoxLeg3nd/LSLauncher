@@ -9,7 +9,12 @@
         Background="Transparent"
         Title="LegacyShockwave Launcher" Height="800" Width="1200">
     <Grid>
-        <userControls:NavBar VerticalAlignment="Top"/>
-        <userControls:HomePage VerticalAlignment="Top" Margin="0,55,0,0" />
+        <userControls:NavBar x:Name="NavBarUserControl" VerticalAlignment="Top"/>
+        <ContentControl Name="MainContentControl" VerticalAlignment="Top" Margin="0,55,0,0" />
+        <Button Name="RefreshButton" Click="RefreshContentButton_Click" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20">
+            <TextBlock Foreground="White" FontSize="30">
+                <Bold>REFRESH</Bold>
+            </TextBlock>
+        </Button>
     </Grid>
 </Window>

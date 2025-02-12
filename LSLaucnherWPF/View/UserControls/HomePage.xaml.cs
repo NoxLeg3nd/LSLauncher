@@ -33,5 +33,9 @@ namespace LSLaucnherWPF.View.UserControls
             string embedURL = $"https://www.youtube.com/embed/59WsFW0WKTY?si=Ok5oDQKGfdoohvy2";
             LSTrailer.Source = new Uri(embedURL);
         }
+        public void Cleanup()
+        {
+            LSTrailer.Dispose();
+        }
     }
 }
