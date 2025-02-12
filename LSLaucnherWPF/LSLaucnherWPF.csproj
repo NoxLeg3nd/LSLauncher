@@ -8,4 +8,25 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Assets\Website\DiagonalLineHeader.gif" />
+    <None Remove="Assets\Website\LSLogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Assets\Games\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3065.39" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+    <PackageReference Include="XamlAnimatedGif" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Website\DiagonalLineHeader.gif" />
+    <Resource Include="Assets\Website\LSLogo.png" />
+  </ItemGroup>
+
 </Project>
