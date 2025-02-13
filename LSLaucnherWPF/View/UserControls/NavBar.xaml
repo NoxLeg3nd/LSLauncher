@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:LSLaucnherWPF.View.UserControls"
              mc:Ignorable="d" 
-             Height="55" d:DesignWidth="800">
+             Height="55" d:DesignWidth="1200">
     <Grid>
         <DockPanel>
             <StackPanel Height="55" Orientation="Horizontal" Background="#66100D0D" VerticalAlignment="Top" HorizontalAlignment="Stretch">
@@ -20,6 +20,7 @@
                 <Button Content="Unity Games" Margin="5" Background="Transparent" Foreground="White" BorderThickness="0"/>
                 <Button Content="Burnin' Rubber Mods" Margin="5" Background="Transparent" Foreground="White" BorderThickness="0"/>
                 <Button Content="Dependencies" Margin="5" Background="Transparent" Foreground="White" BorderThickness="0"/>
+                <Button Content="About" Margin="5" Background="Transparent" Foreground="White" BorderThickness="0"/>
             </StackPanel>
         </DockPanel>
     </Grid>

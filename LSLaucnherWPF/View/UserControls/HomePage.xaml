@@ -7,7 +7,7 @@
              xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
              xmlns:local="clr-namespace:LSLaucnherWPF.View.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="800" d:DesignWidth="1200">
+             d:DesignHeight="3000" d:DesignWidth="1200">
     <Grid>
         <ScrollViewer VerticalScrollBarVisibility="Auto">
             <StackPanel Orientation="Vertical" Margin="10">
@@ -43,7 +43,15 @@
                         legacyshockwave@gmail.com!
                     </TextBlock>
                 </StackPanel>
-                <wv2:WebView2 Name="LSTrailer" Width="500" Height="300"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="Auto">
+                    <wv2:WebView2 Name="LSTrailer" Width="500" Height="300" Margin="15"/>
+                    <TextBlock FontSize="40" Foreground="White" TextAlignment="Center" Margin="15" >
+                        <Bold>Want to know how to play <LineBreak/>
+                        Shockwave games? Check out <LineBreak/> 
+                        the Games tabs located above!</Bold>
+                    </TextBlock>
+                </StackPanel>
+               
             </StackPanel>
         </ScrollViewer>
     </Grid>
