@@ -26,18 +26,18 @@ namespace LSLaucnherWPF
             LoadHome();
         }
 
-        private void LoadHome()
+        public void LoadHome()
         {
             var homePage = new HomePage();
             MainContentControl.Content = homePage;
             currentPageType = typeof(HomePage);
         }
 
-        private void LoadGames()
+        public void LoadSwGames()
         {
-            var gamesPage = new GamesPage();
-            MainContentControl.Content = gamesPage;
-            currentPageType = typeof(GamesPage);
+            var swGamesPage = new SwGamesPage();
+            MainContentControl.Content = swGamesPage;
+            currentPageType = typeof(SwGamesPage);
         }
 
         private void RefreshContentButton_Click(object sender, RoutedEventArgs e)
@@ -55,9 +55,9 @@ namespace LSLaucnherWPF
             {
                 LoadHome();
             }
-            else if (currentPageType == typeof(GamesPage))
+            else if (currentPageType == typeof(SwGamesPage))
             {
-                LoadGames();
+                LoadSwGames();
             }
         }
     }

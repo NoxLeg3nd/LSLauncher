@@ -12,9 +12,14 @@
         <ScrollViewer VerticalScrollBarVisibility="Auto">
             <StackPanel Orientation="Vertical" Margin="10">
                 <Grid>
-                    <Image Source="/Assets/Website/DiagonalLineHeader.gif" gif:ImageBehavior.AutoStart="True" 
-                           gif:ImageBehavior.RepeatBehavior="Forever"
-                           Grid.Row="0"/>
+                    <MediaElement Source="/Assets/Website/DiagonalLineHeader.gif"
+                                  Name="DiagonalLineHeader"
+                                  LoadedBehavior="Play"
+                                  UnloadedBehavior="Manual"
+                                  Height="300"
+                                  Width="1200"
+                                  Stretch="Fill"
+                                  Grid.Row="0"/>
                     <TextBlock Text="LegacyShockwave Launcher (pre-alpha) version 0.01" 
                                FontSize="35" 
                                Foreground="White"

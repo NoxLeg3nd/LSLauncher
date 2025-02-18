@@ -25,5 +25,14 @@ namespace LSLaucnherWPF.View.UserControls
             InitializeComponent();
         }
 
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            ((MainWindow)Application.Current.MainWindow).LoadHome();
+        }
+
+        private void SwGamesButton_Click(object sender, RoutedEventArgs e)
+        {
+            ((MainWindow)Application.Current.MainWindow).LoadSwGames();
+        }
     }
 }

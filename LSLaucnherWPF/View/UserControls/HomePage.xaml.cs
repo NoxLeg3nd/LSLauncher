@@ -25,6 +25,7 @@ namespace LSLaucnherWPF.View.UserControls
         public HomePage()
         {
             InitializeComponent();
+            DiagonalLineHeader.Source = new Uri(System.IO.Path.GetFullPath("Assets/Website/DiagonalLineHeader.gif"));
             LoadYoutubeTrailer();
         }
         private async void LoadYoutubeTrailer()

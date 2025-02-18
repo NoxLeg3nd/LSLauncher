@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net9.0-windows</TargetFramework>
+    <TargetFramework>net9.0-windows10.0.17763.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
@@ -10,12 +10,25 @@
 
   <ItemGroup>
     <None Remove="Assets\Website\DiagonalLineHeader.gif" />
+    <None Remove="Assets\Website\lsgif3_cropped.mp4" />
+    <None Remove="Assets\Website\lsgif3_cropped.wmv" />
     <None Remove="Assets\Website\LSLogo.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Assets\Website\lsgif3_cropped.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Website\lsgif3_cropped.wmv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lsgif3_cropped.wmv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Assets\Games\" />
-    <Folder Include="Properties\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,8 +38,25 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Assets\Website\DiagonalLineHeader.gif" />
-    <Resource Include="Assets\Website\LSLogo.png" />
+      <Content Include="Assets\Website\DiagonalLineHeader.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Resource Include="Assets\Website\LSLogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

@@ -16,13 +16,19 @@ using System.Windows.Shapes;
 namespace LSLaucnherWPF.View.UserControls
 {
     /// <summary>
-    /// Interaction logic for GamesPage.xaml
+    /// Interaction logic for SwGamesPage.xaml
     /// </summary>
-    public partial class GamesPage : UserControl
+    public partial class SwGamesPage : UserControl
     {
-        public GamesPage()
+        public SwGamesPage()
         {
             InitializeComponent();
+            SwLSVideo.Source = new Uri(System.IO.Path.GetFullPath("Assets/Website/lsgif3_cropped.wmv"));
+        }
+        private void SwLSVideo_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            SwLSVideo.Position = TimeSpan.Zero;
+            SwLSVideo.Play();
         }
     }
 }

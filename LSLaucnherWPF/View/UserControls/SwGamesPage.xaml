@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="LSLaucnherWPF.View.UserControls.SwGamesPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LSLaucnherWPF.View.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="3000" d:DesignWidth="1200">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+            <Viewbox Stretch="Uniform" Height="450">
+                <MediaElement Name="SwLSVideo" Source="\Assets\Website\lsgif3_cropped.mp4"
+                              MediaEnded="SwLSVideo_MediaEnded" 
+                              LoadedBehavior="Play" 
+                              UnloadedBehavior="Manual" 
+                              Height="300"
+                              Width="Auto"/>
+            </Viewbox>
+            <TextBlock Text="Shockwave Games" FontSize="36" Foreground="White" Margin="10" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
