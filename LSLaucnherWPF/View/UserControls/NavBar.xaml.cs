@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,6 +34,15 @@ namespace LSLaucnherWPF.View.UserControls
         private void SwGamesButton_Click(object sender, RoutedEventArgs e)
         {
             ((MainWindow)Application.Current.MainWindow).LoadSwGames();
+        }
+
+        private void ModsButton_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://sites.google.com/view/burnin-rubber-mod-hub/home",
+                UseShellExecute = true
+            });
         }
     }
 }

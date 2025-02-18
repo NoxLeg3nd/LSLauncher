@@ -1,0 +1,24 @@
+﻿<Window x:Class="LSLaucnherWPF.BrowserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        xmlns:local="clr-namespace:LSLaucnherWPF"
+        mc:Ignorable="d"
+        Background="Transparent"
+        Title="WebBrowser" Height="800" Width="1200">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" Height="40">
+                <Button Name="BackButton" Content="Back" Click="BrowserBackButton_Click" Foreground="White" Margin="5"/>
+                <Button Name="ForwardButton" Content="Forward" Click="BrowserForwardButton_Click" Foreground="White" Margin="5"/>
+                <Button Name="RefreshButton" Content="Refresh" Click="BrowserRefreshButton_Click" Foreground="White" Margin="5"/>
+                <Button Name="CloseButton" Content="Close" Click="BrowserCloseButton_Click" Foreground="White" Margin="5"/>
+            </StackPanel>
+            <Border CornerRadius="15" Width="1190">
+                <wv2:WebView2 Name="WV2BrowserWindow" Height="720" Width="1200"/>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -37,5 +37,10 @@ namespace LSLaucnherWPF.View.UserControls
             Properties.Settings.Default.BorderVisibility = "Collapsed";
             Properties.Settings.Default.Save();
         }
+        private void SWInfo_Click(object sender, RoutedEventArgs e)
+        {
+            BrowserWindow browserWindow = new BrowserWindow("https://en.wikipedia.org/wiki/Adobe_Shockwave_Player");
+            browserWindow.Show();
+        }
     }
 }

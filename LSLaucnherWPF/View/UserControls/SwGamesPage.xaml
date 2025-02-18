@@ -7,34 +7,46 @@
              mc:Ignorable="d" 
              d:DesignHeight="3000" d:DesignWidth="1200">
     <Grid>
-        <StackPanel Orientation="Vertical" Margin="10">
-            <Viewbox Stretch="Uniform" Height="450">
-                <MediaElement Name="SwLSVideo" Source="\Assets\Website\lsgif3_cropped.mp4"
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical" Margin="10">
+                <Viewbox Stretch="Uniform" Height="450">
+                    <MediaElement Name="SwLSVideo" Source="\Assets\Website\lsgif3_cropped.mp4"
                               MediaEnded="SwLSVideo_MediaEnded" 
                               LoadedBehavior="Play" 
                               UnloadedBehavior="Manual" 
                               Height="300"
                               Width="Auto"/>
-            </Viewbox>
+                </Viewbox>
 
-            <Border Width="1150" Height="250"
+                <Border Width="1150" Height="250"
                 Background="#7F8B0000"
                 CornerRadius="15"
                 Name="SwInfoBorder"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center">
-                <StackPanel Orientation="Vertical">
-                    <TextBlock Background="Transparent"
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Background="Transparent"
                          Foreground="White"
                          FontSize="30"
                          Margin="10"
                          TextWrapping="Wrap"
                          TextAlignment="Center"
                          FontWeight="Black"
-                         Text="IN ORDER TO PLAY THE GAMES LISTED BELOW, YOU MUST USE THE SPR/PROJECTOR EXE FILES LOCATED IN EVERY DOWNLOAD AND HAVE SHOCKWAVE INSTALLED. YOU CAN ALSO USE BASILISK 32-BIT, THOUGH SOME SHOCKWAVE GAMES MAY NOT WORK PROPERLY."/>
-                    <Button Name="AckSwInfoButton" Content="I understand and never show again!" Click="SwInfoButton_Click" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="40"/>
-                </StackPanel>
-            </Border>
-        </StackPanel>
+                         Text="IN ORDER TO PLAY THE GAMES LISTED BELOW, YOU MUST USE THE SPR OR PROJECTOR EXE FILES LOCATED IN EVERY DOWNLOAD AND HAVE SHOCKWAVE INSTALLED. YOU CAN ALSO USE BASILISK 32-BIT, THOUGH SOME GAMES MAY NOT WORK PROPERLY."/>
+                        <Button Name="AckSwInfoButton" Content="I understand and never show again!" Click="SwInfoButton_Click" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="40"/>
+                    </StackPanel>
+                </Border>
+                <TextBlock Text="What is our goal?" Foreground="White" FontSize="55" FontWeight="Bold" HorizontalAlignment="Center" Margin="10"/>
+                <TextBlock Foreground="White" FontSize="30" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" FontWeight="DemiBold" TextAlignment="Center">
+                    We want to provide a continuous link to Adobe Shockwave for the future, along with games that are made to run with this software.
+                </TextBlock>
+                <TextBlock Foreground="White" FontSize="25" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" TextAlignment="Center">
+                    You may ask "Why though?". Well, after Adobe Shockwave shut down on the 9th of April 2019, most games became impossible to run. Browsers are adapting to this change, leaving Shockwave unsupported.
+                </TextBlock>
+                <TextBlock Foreground="White" FontSize="25" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" TextAlignment="Center">
+                    <Hyperlink Click="SWInfo_Click">Here is a great article that explains Adobe Shockwave (Also known as Macromedia Shockwave) and it's long history!</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </UserControl>
