@@ -24,11 +24,18 @@ namespace LSLaucnherWPF.View.UserControls
         {
             InitializeComponent();
             SwLSVideo.Source = new Uri(System.IO.Path.GetFullPath("Assets/Website/lsgif3_cropped.wmv"));
+            SwInfoBorder.Visibility = Properties.Settings.Default.BorderVisibility == "Visible" ? Visibility.Visible : Visibility.Visible; //Change this to Collapsed hide it forever (even after app restart)
         }
         private void SwLSVideo_MediaEnded(object sender, RoutedEventArgs e)
         {
             SwLSVideo.Position = TimeSpan.Zero;
             SwLSVideo.Play();
+        }
+        private void SwInfoButton_Click(object sender, RoutedEventArgs e)
+        {
+            SwInfoBorder.Visibility = Visibility.Collapsed;
+            Properties.Settings.Default.BorderVisibility = "Collapsed";
+            Properties.Settings.Default.Save();
         }
     }
 }

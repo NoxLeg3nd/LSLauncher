@@ -16,7 +16,25 @@
                               Height="300"
                               Width="Auto"/>
             </Viewbox>
-            <TextBlock Text="Shockwave Games" FontSize="36" Foreground="White" Margin="10" HorizontalAlignment="Center"/>
+
+            <Border Width="1150" Height="250"
+                Background="#7F8B0000"
+                CornerRadius="15"
+                Name="SwInfoBorder"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Background="Transparent"
+                         Foreground="White"
+                         FontSize="30"
+                         Margin="10"
+                         TextWrapping="Wrap"
+                         TextAlignment="Center"
+                         FontWeight="Black"
+                         Text="IN ORDER TO PLAY THE GAMES LISTED BELOW, YOU MUST USE THE SPR/PROJECTOR EXE FILES LOCATED IN EVERY DOWNLOAD AND HAVE SHOCKWAVE INSTALLED. YOU CAN ALSO USE BASILISK 32-BIT, THOUGH SOME SHOCKWAVE GAMES MAY NOT WORK PROPERLY."/>
+                    <Button Name="AckSwInfoButton" Content="I understand and never show again!" Click="SwInfoButton_Click" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="40"/>
+                </StackPanel>
+            </Border>
         </StackPanel>
     </Grid>
 </UserControl>
