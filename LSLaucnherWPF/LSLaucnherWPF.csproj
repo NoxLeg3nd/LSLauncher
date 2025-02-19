@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\App\LSlogo.png" />
     <None Remove="Assets\Website\DiagonalLineHeader.gif" />
     <None Remove="Assets\Website\lsgif3_cropped.mp4" />
     <None Remove="Assets\Website\lsgif3_cropped.wmv" />
@@ -38,6 +39,7 @@
       <Content Include="Assets\Website\DiagonalLineHeader.gif">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
+      <Resource Include="Assets\App\LSLogo.png" />
       <Resource Include="Assets\Website\LSLogo.png" />
   </ItemGroup>
 

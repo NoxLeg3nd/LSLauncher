@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:LSLaucnherWPF"
         xmlns:userControls="clr-namespace:LSLaucnherWPF.View.UserControls"
         mc:Ignorable="d"
+        Icon="/Assets/Website/LSLogo.png"
         Background="Transparent"
         ResizeMode="CanMinimize"
         Title="LegacyShockwave Launcher" Height="800" Width="1200">
