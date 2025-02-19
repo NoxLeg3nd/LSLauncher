@@ -27,29 +27,36 @@ namespace LSLaucnherWPF
 
         private async void LoadUrl(string url)
         {
-            await WV2BrowserWindow.EnsureCoreWebView2Async();
-            WV2BrowserWindow.Source = new Uri(url);
+            await WV2BrowserPage.EnsureCoreWebView2Async();
+            WV2BrowserPage.Source = new Uri(url);
+            this.SizeChanged += OnWindowSizeChanged;
+        }
+
+        private void OnWindowSizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            WV2BrowserPage.Width = this.ActualWidth;
+            WV2BrowserPage.Height = this.ActualHeight;
         }
 
         private void BrowserBackButton_Click(object sender, RoutedEventArgs e)
         {
-            if (WV2BrowserWindow.CanGoBack)
+            if (WV2BrowserPage.CanGoBack)
             {
-                WV2BrowserWindow.GoBack();
+                WV2BrowserPage.GoBack();
             }
         }
 
         private void BrowserForwardButton_Click(object sender, RoutedEventArgs e)
         {
-            if (WV2BrowserWindow.CanGoForward)
+            if (WV2BrowserPage.CanGoForward)
             {
-                WV2BrowserWindow.GoForward();
+                WV2BrowserPage.GoForward();
             }
         }
 
         private void BrowserRefreshButton_Click(object sender, RoutedEventArgs e)
         {
-            WV2BrowserWindow.Reload();
+            WV2BrowserPage.Reload();
         }
 
         private void BrowserCloseButton_Click(object sender, RoutedEventArgs e)

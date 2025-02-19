@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +29,7 @@ namespace LSLaucnherWPF.View.UserControls
             DiagonalLineHeader.Source = new Uri(System.IO.Path.GetFullPath("Assets/Website/DiagonalLineHeader.gif"));
             LoadYoutubeTrailer();
         }
+
         private async void LoadYoutubeTrailer()
         {
             await LSTrailer.EnsureCoreWebView2Async();
@@ -38,6 +40,15 @@ namespace LSLaucnherWPF.View.UserControls
         {
             LSTrailer.Stop();
             LSTrailer.Dispose();
+        }
+
+        private void DiscordJoin_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://discord.com/invite/3w3EC5W",
+                UseShellExecute = true
+            });
         }
     }
 }

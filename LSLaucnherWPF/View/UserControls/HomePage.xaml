@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:gif="http://wpfanimatedgif.codeplex.com"
              xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
              xmlns:local="clr-namespace:LSLaucnherWPF.View.UserControls"
              mc:Ignorable="d" 
@@ -20,7 +19,7 @@
                                   Width="1200"
                                   Stretch="Fill"
                                   Grid.Row="0"/>
-                    <TextBlock Text="LegacyShockwave Launcher (pre-alpha) version 0.01" 
+                    <TextBlock Text="LegacyShockwave Launcher (development build)" 
                                FontSize="35" 
                                Foreground="White"
                                Grid.Row="0" Grid.Column="0"
@@ -28,8 +27,9 @@
                                VerticalAlignment="Center"/>
                 </Grid>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBlock Height="Auto" FontSize="23" Foreground="White" TextAlignment="Center" Margin="10">
-                        Whether you're a Burnin' <LineBreak/>Rubber fanatic looking for <LineBreak/>
+                    <TextBlock Height="Auto" FontSize="23" Foreground="White" TextAlignment="Center" Margin="10" TextWrapping="Wrap">
+                        Whether you're a Burnin' <LineBreak/>
+                        Rubber fanatic looking for <LineBreak/>
                         some cool mods or want to <LineBreak/>
                         play your favorite childhood <LineBreak/>
                         games, we have got you covered!
@@ -56,7 +56,7 @@
                         the Games tabs located above!</Bold>
                     </TextBlock>
                 </StackPanel>
-               
+                <Image Name="DiscordJoin" Source="/Assets/Website/LSJoinDiscord.png" Width="300" Height="300" MouseLeftButtonDown="DiscordJoin_Click"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

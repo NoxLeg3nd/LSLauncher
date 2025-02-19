@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,6 +42,15 @@ namespace LSLaucnherWPF.View.UserControls
         {
             BrowserWindow browserWindow = new BrowserWindow("https://en.wikipedia.org/wiki/Adobe_Shockwave_Player");
             browserWindow.Show();
+        }
+
+        private void DiscordJoin_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://discord.com/invite/3w3EC5W",
+                UseShellExecute = true
+            });
         }
     }
 }

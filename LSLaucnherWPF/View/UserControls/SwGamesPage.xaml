@@ -46,6 +46,52 @@
                 <TextBlock Foreground="White" FontSize="25" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" TextAlignment="Center">
                     <Hyperlink Click="SWInfo_Click">Here is a great article that explains Adobe Shockwave (Also known as Macromedia Shockwave) and it's long history!</Hyperlink>
                 </TextBlock>
+                <TextBlock Text="Game Producers" Foreground="White" FontSize="55" FontWeight="Bold" HorizontalAlignment="Center" Margin="10"/>
+                <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="0" Margin="10">
+                        <Image Source="/Assets/Website/GameDevelopers/SBS.png" Width="360" Height="190" Stretch="Fill"/>
+                        <TextBlock Name="SBSText" Text="Silent Bay Studios" Foreground="White" FontSize="25" TextAlignment="Center" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1" Margin="10">
+                        <Image Source="/Assets/Website/GameDevelopers/Inludo.jpg" Width="360" Height="190" Stretch="Fill"/>
+                        <TextBlock Name="InludoText" Text="Inlduo Games Development" Foreground="White" FontSize="25" TextAlignment="Center" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="2" Margin="10">
+                        <Image Source="/Assets/Website/GameDevelopers/Kinelco.jpg" Width="360" Height="190" Stretch="Fill"/>
+                        <TextBlock Name="KinelcoText" Text="Kinelco" Foreground="White" FontSize="25" TextAlignment="Center" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="0" Margin="10">
+                        <Image Source="/Assets/Website/GameDevelopers/OP.jpg" Width="360" Height="190" Stretch="Fill"/>
+                        <TextBlock Name="OPText" Text="Officine Pixel" Foreground="White" FontSize="25" TextAlignment="Center" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1" Margin="10">
+                        <Image Source="/Assets/Website/GameDevelopers/RJS.jpg" Width="360" Height="190" Stretch="Fill"/>
+                        <TextBlock Name="RJSText" Text="RJS Visual Design" Foreground="White" FontSize="25" TextAlignment="Center" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="2" Margin="10">
+                        <Image Source="/Assets/Website/GameDevelopers/Xform.jpg" Width="360" Height="190" Stretch="Fill"/>
+                        <TextBlock Name="XformText" Text="Xform Games" Foreground="White" FontSize="25" TextAlignment="Center" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="0" Margin="10">
+                        <Image Source="/Assets/Website/GameDevelopers/Gamevial.jpg" Width="360" Height="190" Stretch="Fill"/>
+                        <TextBlock Name="GamevialText" Text="Gamevial" Foreground="White" FontSize="25" TextAlignment="Center" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="2" Margin="10">
+                        <Image Source="/Assets/Website/GameDevelopers/Other.png" Width="360" Height="190" Stretch="Fill"/>
+                        <TextBlock Name="OtherText" Text="Other Games" Foreground="White" FontSize="25" TextAlignment="Center" Margin="5"/>
+                    </StackPanel>
+                </Grid>
+                <Image Name="DiscordJoin" Source="/Assets/Website/LSJoinDiscord.png" Width="300" Height="300" MouseLeftButtonDown="DiscordJoin_Click"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

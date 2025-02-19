@@ -16,9 +16,9 @@
                 <Button Name="RefreshButton" Content="Refresh" Click="BrowserRefreshButton_Click" Foreground="White" Margin="5"/>
                 <Button Name="CloseButton" Content="Close" Click="BrowserCloseButton_Click" Foreground="White" Margin="5"/>
             </StackPanel>
-            <Border CornerRadius="15" Width="1190">
-                <wv2:WebView2 Name="WV2BrowserWindow" Height="720" Width="1200"/>
-            </Border>
+            <Grid>
+                <wv2:WebView2 x:Name="WV2BrowserPage" Height="760" Width="1200"/>
+            </Grid>
         </StackPanel>
     </Grid>
 </Window>
