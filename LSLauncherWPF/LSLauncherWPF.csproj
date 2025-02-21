@@ -86,7 +86,9 @@
       <Content Include="Assets\Website\DiagonalLineHeader.gif">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
-      <Resource Include="Assets\App\LSLogo.png" />
+      <Content Include="Assets\App\LSLogo.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
       <Content Include="Assets\Website\GameDevelopers\Gamevial.jpg">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
