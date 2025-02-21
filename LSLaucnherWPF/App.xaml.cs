@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace LSLaucnherWPF
+namespace LSLauncherWPF
 {
     /// <summary>
     /// Interaction logic for App.xaml

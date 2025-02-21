@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace LSLaucnherWPF.View.UserControls
+namespace LSLauncherWPF.View.UserControls
 {
     /// <summary>
     /// Interaction logic for SwGamesPage.xaml

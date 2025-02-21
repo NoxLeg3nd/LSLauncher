@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 
 using Microsoft.Web.WebView2.Core;
 
-namespace LSLaucnherWPF.View.UserControls
+namespace LSLauncherWPF.View.UserControls
 {
     /// <summary>
     /// Interaction logic for HomePage.xaml

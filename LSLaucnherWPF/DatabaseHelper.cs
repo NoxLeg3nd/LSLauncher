@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using System.Data.SQLite;
 using System.IO;
 
-namespace LSLaucnherWPF
+namespace LSLauncherWPF
 {
     class DatabaseHelper
     {

@@ -17,7 +17,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace LSLaucnherWPF.View.UserControls
+namespace LSLauncherWPF.View.UserControls
 {
     public partial class XformPage : UserControl
     {

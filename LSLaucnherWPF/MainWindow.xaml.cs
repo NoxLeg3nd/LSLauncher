@@ -1,4 +1,4 @@
-﻿using LSLaucnherWPF.View.UserControls;
+﻿using LSLauncherWPF.View.UserControls;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Text;
@@ -12,7 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace LSLaucnherWPF
+namespace LSLauncherWPF
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

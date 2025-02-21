@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace LSLaucnherWPF
+namespace LSLauncherWPF
 {
     /// <summary>
     /// Interaction logic for BrowserWindow.xaml
