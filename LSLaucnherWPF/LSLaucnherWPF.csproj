@@ -27,6 +27,7 @@
     <None Remove="Assets\Website\lsgif3_cropped.wmv" />
     <None Remove="Assets\Website\LSJoinDiscord.png" />
     <None Remove="Assets\Website\LSLogo.png" />
+    <None Remove="Databases\lsdb.db" />
   </ItemGroup>
 
   <ItemGroup>
@@ -67,6 +68,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Website\LSJoinDiscord.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\lsdb.db">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
