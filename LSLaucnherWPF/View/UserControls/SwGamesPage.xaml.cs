@@ -43,6 +43,11 @@ namespace LSLaucnherWPF.View.UserControls
             BrowserWindow browserWindow = new BrowserWindow("https://en.wikipedia.org/wiki/Adobe_Shockwave_Player");
             browserWindow.Show();
         }
+        
+        private void Xform_Click(object sender, RoutedEventArgs e)
+        {
+            ((MainWindow)Application.Current.MainWindow).LoadXform();
+        }
 
         private void DiscordJoin_Click(object sender, RoutedEventArgs e)
         {

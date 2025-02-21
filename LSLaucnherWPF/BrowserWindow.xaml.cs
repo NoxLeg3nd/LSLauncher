@@ -56,7 +56,15 @@ namespace LSLaucnherWPF
 
         private void BrowserRefreshButton_Click(object sender, RoutedEventArgs e)
         {
-            WV2BrowserPage.Reload();
+            try
+            {
+                WV2BrowserPage.Reload();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
 
         private void BrowserCloseButton_Click(object sender, RoutedEventArgs e)

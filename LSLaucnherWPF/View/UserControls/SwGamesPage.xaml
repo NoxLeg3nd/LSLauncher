@@ -19,7 +19,7 @@
                 </Viewbox>
 
                 <Border Width="1150" Height="250"
-                Background="#7F8B0000"
+                Background="#668B0000"
                 CornerRadius="15"
                 Name="SwInfoBorder"
                 VerticalAlignment="Center"
@@ -78,7 +78,7 @@
                         <Image Source="/Assets/Website/GameDevelopers/RJS.jpg" Width="360" Height="190" Stretch="Fill"/>
                         <TextBlock Name="RJSText" Text="RJS Visual Design" Foreground="White" FontSize="25" TextAlignment="Center" Margin="5"/>
                     </StackPanel>
-                    <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="2" Margin="10">
+                    <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="2" Margin="10" MouseDown="Xform_Click">
                         <Image Source="/Assets/Website/GameDevelopers/Xform.jpg" Width="360" Height="190" Stretch="Fill"/>
                         <TextBlock Name="XformText" Text="Xform Games" Foreground="White" FontSize="25" TextAlignment="Center" Margin="5"/>
                     </StackPanel>

@@ -36,6 +36,11 @@ namespace LSLaucnherWPF.View.UserControls
             ((MainWindow)Application.Current.MainWindow).LoadSwGames();
         }
 
+        private void DependeciesButton_Click(object sender, RoutedEventArgs e)
+        {
+            ((MainWindow)Application.Current.MainWindow).LoadDependencies();
+        }
+
         private void ModsButton_Click(object sender, RoutedEventArgs e)
         {
             Process.Start(new ProcessStartInfo

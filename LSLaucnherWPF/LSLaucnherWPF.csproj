@@ -10,6 +10,10 @@
 
   <ItemGroup>
     <None Remove="Assets\App\LSlogo.png" />
+    <None Remove="Assets\Games\Xform\br1.png" />
+    <None Remove="Assets\Games\Xform\br2.png" />
+    <None Remove="Assets\Games\Xform\br3.png" />
+    <None Remove="Assets\Games\Xform\br4.png" />
     <None Remove="Assets\Website\DiagonalLineHeader.gif" />
     <None Remove="Assets\Website\GameDevelopers\Gamevial.jpg" />
     <None Remove="Assets\Website\GameDevelopers\Inludo.jpg" />
@@ -26,6 +30,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Assets\Games\Xform\br1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Games\Xform\br2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Games\Xform\br3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Games\Xform\br4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Website\GameDevelopers\Kinelco.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -56,13 +72,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Assets\Games\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3065.39" />
-    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
-    <PackageReference Include="XamlAnimatedGif" Version="2.3.0" />
+    <PackageReference Include="SQLite" Version="3.13.0" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.119" />
   </ItemGroup>
 
   <ItemGroup>

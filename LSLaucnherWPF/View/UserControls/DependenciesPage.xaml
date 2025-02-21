@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="LSLaucnherWPF.View.UserControls.DependenciesPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LSLaucnherWPF.View.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="3000" d:DesignWidth="1200">
+    <StackPanel Name="DependenciesPanel" Orientation="Vertical">
+        <Border CornerRadius="15" Margin="15" Background="#0CFFFFFF" Height="100" Width="Auto">
+            <StackPanel Orientation="Vertical">
+                <Button Name="CheckSwInstalledButton" Click="IfSwInstalled_Click" FontSize="20" Margin="10" HorizontalAlignment="Center" Foreground="White" Content="Check if Shockwave 12 is installed"/>
+                <TextBlock Name="SwDependency" Margin="10" Foreground="White" FontSize="20" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+        <Border CornerRadius="15" Margin="15" Background="#0CFFFFFF" Height="100" Width="Auto">
+            <StackPanel Orientation="Vertical">
+                <Button Name="CheckUnityInstalledButton" Click="IfUnityInstalled_Click" FontSize="20" Margin="10" HorizontalAlignment="Center" Foreground="White" Content="Check if Unity Web Player is installed"/>
+                <TextBlock Name="UnityDependency" Margin="10" Foreground="White" FontSize="20" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+    </StackPanel>
+</UserControl>

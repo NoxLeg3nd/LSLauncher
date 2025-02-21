@@ -41,6 +41,20 @@ namespace LSLaucnherWPF
             currentPageType = typeof(SwGamesPage);
         }
 
+        public void LoadXform()
+        {
+            var xformPage = new XformPage(6);
+            MainContentControl.Content = xformPage;
+            currentPageType = typeof(XformPage);
+        }
+
+        public void LoadDependencies()
+        {
+            var dependenciesPage = new DependenciesPage();
+            MainContentControl.Content = dependenciesPage;
+            currentPageType = typeof(DependenciesPage);
+        }
+
         private void RefreshContentButton_Click(object sender, RoutedEventArgs e)
         {
             RefreshCurrentPage();
