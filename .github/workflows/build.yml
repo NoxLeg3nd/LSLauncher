@@ -14,8 +14,13 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v2
       with:
-        dotnet-version: '5.0.x'
-
+        dotnet-version: '9.0.x'
+        
+    - name: Install OpenSSL
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libssl-dev
+        
     - name: Install dependencies
       run: dotnet restore
 
