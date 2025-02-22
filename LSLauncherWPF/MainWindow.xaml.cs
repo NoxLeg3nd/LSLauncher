@@ -62,6 +62,20 @@ namespace LSLauncherWPF
 
         private void RefreshCurrentPage()
         {
+            switch (currentPageType.Name)
+            {
+                case nameof(HomePage):
+                    LoadHome();
+                    break;
+                case nameof(SwGamesPage):
+                    LoadSwGames();
+                    break;
+                case nameof(DependenciesPage):
+                    LoadDependencies();
+                    break;
+                default:
+                    throw new InvalidOperationException($"Unhandled page type: {currentPageType.Name}");
+            }
             if (MainContentControl.Content is HomePage homePage)
             {
                 homePage.Cleanup();
@@ -74,6 +88,7 @@ namespace LSLauncherWPF
             {
                 LoadSwGames();
             }
+            
         }
     }
 }

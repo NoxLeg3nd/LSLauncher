@@ -16,8 +16,8 @@
                                   LoadedBehavior="Play"
                                   UnloadedBehavior="Manual"
                                   Height="300"
-                                  Width="1200"
-                                  Stretch="Fill"
+                                  Width="Auto"
+                                  Stretch="UniformToFill"
                                   Grid.Row="0"/>
                     <TextBlock Text="LegacyShockwave Launcher (development build)" 
                                FontSize="35" 
@@ -26,37 +26,33 @@
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"/>
                 </Grid>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBlock Height="Auto" FontSize="23" Foreground="White" TextAlignment="Center" Margin="10" TextWrapping="Wrap">
-                        Whether you're a Burnin' <LineBreak/>
-                        Rubber fanatic looking for <LineBreak/>
-                        some cool mods or want to <LineBreak/>
-                        play your favorite childhood <LineBreak/>
-                        games, we have got you covered!
+                <Grid HorizontalAlignment="Stretch">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Height="Auto" FontSize="23" Foreground="White" TextAlignment="Center" Margin="10" TextWrapping="Wrap" Grid.Column="0">
+                            Whether you're a Burnin' Rubber fanatic looking for some cool mods or want to play your favorite childhood games, we have got you covered!
                     </TextBlock>
-                    <TextBlock Height="Auto" FontSize="23" Foreground="White" Margin="10" TextAlignment="Center">
-                        <Bold>NEWS</Bold> <LineBreak/> This is the first version of the LSLauncher! <LineBreak/>
-                        Make sure to check the Discord server to stay <LineBreak/>
-                        updated regarding the progress!
+                    <TextBlock Height="Auto" FontSize="23" Foreground="White" Margin="10" TextAlignment="Center" TextWrapping="Wrap" Grid.Column="1">
+                            <Bold>NEWS</Bold> <LineBreak/> This is the first version of the LSLauncher! Make sure to check the Discord server to stay updated regarding the progress!
                     </TextBlock>
-                    <TextBlock Height="Auto" FontSize="23" Foreground="White" Margin="10" TextAlignment="Center">
-                        Do you want to be in touch <LineBreak/>
-                        with our progress? Keep up <LineBreak/>
-                        with modding news and more <LineBreak/>
-                        in our Discord server, or send <LineBreak/>
-                        us an e-mail at <LineBreak/>
-                        legacyshockwave@gmail.com!
+                    <TextBlock Height="Auto" FontSize="23" Foreground="White" Margin="10" TextAlignment="Center" TextWrapping="WrapWithOverflow" Grid.Column="2">
+                            Do you want to be in touch with our progress? Keep up with modding news and more in our Discord server, or send us an e-mail at legacyshockwave@gmail.com!
                     </TextBlock>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="Auto">
-                    <wv2:WebView2 Name="LSTrailer" Width="500" Height="300" Margin="15"/>
-                    <TextBlock FontSize="40" Foreground="White" TextAlignment="Center" Margin="15" >
-                        <Bold>Want to know how to play <LineBreak/>
-                        Shockwave games? Check out <LineBreak/> 
-                        the Games tabs located above!</Bold>
+                </Grid>
+                <Grid HorizontalAlignment="Stretch">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <wv2:WebView2 Name="LSTrailer" Width="500" Height="300" Margin="15" Grid.Column="0"/>
+                    <TextBlock FontSize="50" Foreground="White" TextAlignment="Center" Margin="15" TextWrapping="Wrap" FontWeight="DemiBold" Grid.Column="1">
+                        Want to know how to play Shockwave games? Check out the Games tabs located above!
                     </TextBlock>
-                </StackPanel>
-                <Image Name="DiscordJoin" Source="/Assets/Website/LSJoinDiscord.png" Width="300" Height="300" MouseLeftButtonDown="DiscordJoin_Click"/>
+                </Grid>
+                <Image Name="DiscordJoin" Source="/Assets/Website/LSJoinDiscord.png" Width="400" Height="200" MouseLeftButtonDown="DiscordJoin_Click" Margin="15"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

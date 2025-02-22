@@ -6,18 +6,34 @@
              xmlns:local="clr-namespace:LSLauncherWPF.View.UserControls"
              mc:Ignorable="d" 
              d:DesignHeight="3000" d:DesignWidth="1200">
-    <StackPanel Name="DependenciesPanel" Orientation="Vertical">
-        <Border CornerRadius="15" Margin="15" Background="#0CFFFFFF" Height="100" Width="Auto">
-            <StackPanel Orientation="Vertical">
-                <Button Name="CheckSwInstalledButton" Click="IfSwInstalled_Click" FontSize="20" Margin="10" HorizontalAlignment="Center" Foreground="White" Content="Check if Shockwave 12 is installed"/>
-                <TextBlock Name="SwDependency" Margin="10" Foreground="White" FontSize="20" HorizontalAlignment="Center"/>
-            </StackPanel>
-        </Border>
-        <Border CornerRadius="15" Margin="15" Background="#0CFFFFFF" Height="100" Width="Auto">
-            <StackPanel Orientation="Vertical">
-                <Button Name="CheckUnityInstalledButton" Click="IfUnityInstalled_Click" FontSize="20" Margin="10" HorizontalAlignment="Center" Foreground="White" Content="Check if Unity Web Player is installed"/>
-                <TextBlock Name="UnityDependency" Margin="10" Foreground="White" FontSize="20" HorizontalAlignment="Center"/>
-            </StackPanel>
-        </Border>
-    </StackPanel>
+    <ScrollViewer>
+        <StackPanel Orientation="Vertical">
+            <Image Source="/Assets/Website/DependenciesHeader.png" Height="500" Stretch="UniformToFill" Margin="10" HorizontalAlignment="Center"/>
+            <Border CornerRadius="15" Margin="15" Background="#0CFFFFFF" Height="100" Width="Auto">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel x:Name="CheckSwStackPanel" Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Name="CheckSwInstalledButton" Click="IfSwInstalled_Click" FontSize="20" Margin="10" HorizontalAlignment="Center" Foreground="White" Content="Check if Shockwave 12 is installed"/>
+                        <Button Name="InstallSwButton" Click="InstallSwButton_Click" FontSize="20" Margin="10" Foreground="White" Content="Install Shockwave 12!"/>
+                    </StackPanel>
+                    <TextBlock Name="SwDependency" Margin="10" Foreground="White" FontSize="20" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+            <Border CornerRadius="15" Margin="15" Background="#0CFFFFFF" Height="100" Width="Auto">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel x:Name="CheckUnityStackPanel" Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Name="CheckUnityInstalledButton" Click="IfUnityInstalled_Click" FontSize="20" Margin="10" HorizontalAlignment="Center" Foreground="White" Content="Check if Unity Web Player is installed"/>
+                        <Button Name="InstallUnityButton" Click="InstallUnityButton_Click" FontSize="20" Margin="10" Foreground="White" Content="Install Unity 2.6!"/>
+                    </StackPanel>
+                    <TextBlock Name="UnityDependency" Margin="10" Foreground="White" FontSize="20" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+            <Border CornerRadius="15" Margin="15" Background="#0CFFFFFF" Height="Auto" Width="Auto">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock TextWrapping="Wrap" FontSize="25" FontWeight="Bold" Foreground="White" Margin="15,5,15,0">Your game crashes on startup or has a black screen (especially for NVidia GPUs but not limited to them)?</TextBlock>
+                    <TextBlock TextWrapping="Wrap" FontSize="25" Foreground="White" Margin="15,5,0,0">With a few registry tweaks you can play your favorite games again! Just press the button below and everything should work perfectly! For transparency, <Hyperlink Click="RegistryInfo_Click">here you can find details about the registries modified through the fix</Hyperlink>.</TextBlock>
+                    <Button Name="NvidiaShockwaveFix" Click="NvidiaShockwaveFix_Click" HorizontalAlignment="Center" Foreground="White" FontSize="25" FontWeight="DemiBold" Margin="10" Content="Apply fixes!"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
 </UserControl>

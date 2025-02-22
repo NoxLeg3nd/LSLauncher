@@ -7,14 +7,19 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Assets\App\LSlogo.png" />
+    <None Remove="Assets\GameDependencies\NVidiaShockwaveFix.exe" />
+    <None Remove="Assets\GameDependencies\Shockwave_Installer_Full.exe" />
+    <None Remove="Assets\GameDependencies\unitywebplayer26.exe" />
     <None Remove="Assets\Games\Xform\br1.png" />
     <None Remove="Assets\Games\Xform\br2.png" />
     <None Remove="Assets\Games\Xform\br3.png" />
     <None Remove="Assets\Games\Xform\br4.png" />
+    <None Remove="Assets\Website\DependenciesHeader.png" />
     <None Remove="Assets\Website\DiagonalLineHeader.gif" />
     <None Remove="Assets\Website\GameDevelopers\Gamevial.jpg" />
     <None Remove="Assets\Website\GameDevelopers\Inludo.jpg" />
@@ -32,6 +37,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Assets\GameDependencies\NVidiaShockwaveFix.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\GameDependencies\Shockwave_Installer_Full.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\GameDependencies\unitywebplayer26.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Games\Xform\br1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -42,6 +56,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Games\Xform\br4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Website\DependenciesHeader.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Website\GameDevelopers\Kinelco.jpg">

@@ -9,16 +9,18 @@
     <Grid>
         <ScrollViewer VerticalScrollBarVisibility="Auto">
             <StackPanel Orientation="Vertical" Margin="10">
-                <Viewbox Stretch="Uniform" Height="450">
+                <Viewbox Stretch="UniformToFill" Height="Auto">
                     <MediaElement Name="SwLSVideo" Source="\Assets\Website\lsgif3_cropped.mp4"
                               MediaEnded="SwLSVideo_MediaEnded" 
                               LoadedBehavior="Play" 
                               UnloadedBehavior="Manual" 
                               Height="300"
-                              Width="Auto"/>
+                              Width="Auto"
+                              Margin="0,0,0,10"
+                              Stretch="UniformToFill"/>
                 </Viewbox>
 
-                <Border Width="1150" Height="250"
+                <Border Width="Auto" Height="Auto"
                 Background="#668B0000"
                 CornerRadius="15"
                 Name="SwInfoBorder"
@@ -33,7 +35,7 @@
                          TextAlignment="Center"
                          FontWeight="Black"
                          Text="IN ORDER TO PLAY THE GAMES LISTED BELOW, YOU MUST USE THE SPR OR PROJECTOR EXE FILES LOCATED IN EVERY DOWNLOAD AND HAVE SHOCKWAVE INSTALLED. YOU CAN ALSO USE BASILISK 32-BIT, THOUGH SOME GAMES MAY NOT WORK PROPERLY."/>
-                        <Button Name="AckSwInfoButton" Content="I understand and never show again!" Click="SwInfoButton_Click" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="40"/>
+                        <Button Name="AckSwInfoButton" Content="I understand and never show again!" Click="SwInfoButton_Click" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="40" Margin="0,0,0,10"/>
                     </StackPanel>
                 </Border>
                 <TextBlock Text="What is our goal?" Foreground="White" FontSize="55" FontWeight="Bold" HorizontalAlignment="Center" Margin="10"/>
@@ -43,11 +45,11 @@
                 <TextBlock Foreground="White" FontSize="25" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" TextAlignment="Center">
                     You may ask "Why though?". Well, after Adobe Shockwave shut down on the 9th of April 2019, most games became impossible to run. Browsers are adapting to this change, leaving Shockwave unsupported.
                 </TextBlock>
-                <TextBlock Foreground="White" FontSize="25" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" TextAlignment="Center">
+                <TextBlock Foreground="White" FontSize="25" HorizontalAlignment="Center" Margin="10" TextWrapping="Wrap" TextAlignment="Center">
                     <Hyperlink Click="SWInfo_Click">Here is a great article that explains Adobe Shockwave (Also known as Macromedia Shockwave) and it's long history!</Hyperlink>
                 </TextBlock>
                 <TextBlock Text="Game Producers" Foreground="White" FontSize="55" FontWeight="Bold" HorizontalAlignment="Center" Margin="10"/>
-                <Grid Margin="10">
+                <Grid Margin="10" Width="Auto" Height="Auto" HorizontalAlignment="Center">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>

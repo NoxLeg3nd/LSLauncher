@@ -9,12 +9,10 @@
     <Grid>
         <DockPanel>
             <StackPanel Height="55" Orientation="Horizontal" Background="#66100D0D" VerticalAlignment="Top" HorizontalAlignment="Stretch">
-                <Button Name="LogoButton" Click="HomeButton_Click" Margin="5" Background="Transparent" VerticalAlignment="Center" Padding="0" BorderThickness="0">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="/Assets/Website/LSLogo.png" VerticalAlignment="Center" Width="70"/>
-                        <TextBlock Text="LegacyShockwave Launcher " Foreground="White" VerticalAlignment="Center" Margin="5,0,0,0"/>
-                    </StackPanel>
-                </Button>
+                <StackPanel Orientation="Horizontal" Margin="0,0,5,0">
+                    <Image Source="/Assets/Website/LSLogo.png" VerticalAlignment="Center" Width="70"/>
+                    <TextBlock Text="LegacyShockwave Launcher " Foreground="White" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                </StackPanel>
                 <Button Name="HomeButton" Click="HomeButton_Click" Content="Home" Margin="5" Background="Transparent" VerticalAlignment="Center" Foreground="White" BorderThickness="0"/>
                 <Button Name="SwGamesButton" Click="SwGamesButton_Click" Content="Shockwave Games" Margin="5" Background="Transparent" Foreground="White" BorderThickness="0"/>
                 <Button Name="UnityGamesButton" Content="Unity Games" Margin="5" Background="Transparent" Foreground="White" BorderThickness="0"/>
