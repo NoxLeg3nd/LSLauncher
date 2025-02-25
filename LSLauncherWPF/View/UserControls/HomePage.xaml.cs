@@ -38,8 +38,11 @@ namespace LSLauncherWPF.View.UserControls
         }
         public void Cleanup()
         {
-            LSTrailer.Stop();
-            LSTrailer.Dispose();
+            if (LSTrailer.CoreWebView2 != null)
+            {
+                LSTrailer.Stop();
+                LSTrailer.Dispose();
+            }
         }
 
         private void DiscordJoin_Click(object sender, RoutedEventArgs e)
