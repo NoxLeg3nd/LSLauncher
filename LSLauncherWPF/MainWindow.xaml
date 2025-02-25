@@ -6,15 +6,15 @@
         xmlns:local="clr-namespace:LSLauncherWPF"
         xmlns:userControls="clr-namespace:LSLauncherWPF.View.UserControls"
         mc:Ignorable="d"
-        Icon="/Assets/Website/LSLogo.png"
+        Icon="/Assets/App/LSLogo.png"
         Background="Transparent"
-        ResizeMode="CanResizeWithGrip"
-        Title="LegacyShockwave Launcher" Height="800" Width="1200">
+        ResizeMode="CanResize"
+        Title="LegacyShockwave Launcher" Height="800" Width="1200" MinHeight="200" MinWidth="400">
     <Grid>
         <userControls:NavBar x:Name="NavBarUserControl" VerticalAlignment="Top"/>
         <ContentControl Name="MainContentControl" VerticalAlignment="Top" Margin="0,55,0,0" />
-        <Button Name="RefreshButton" Click="RefreshContentButton_Click" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20">
-            <TextBlock Foreground="White" FontSize="30">
+        <Button Name="RefreshButton" Click="RefreshContentButton_Click" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,15,10">
+            <TextBlock Foreground="White" FontSize="20">
                 <Bold>REFRESH</Bold>
             </TextBlock>
         </Button>
