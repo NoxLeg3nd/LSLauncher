@@ -83,6 +83,9 @@ namespace LSLauncherWPF
                 case nameof(DependenciesPage):
                     LoadDependencies();
                     break;
+                case nameof(XformPage):
+                    LoadXform();
+                    break;
                 default:
                     throw new InvalidOperationException($"Unhandled page type: {currentPageType.Name}");
             }

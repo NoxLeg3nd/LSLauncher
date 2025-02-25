@@ -68,8 +68,7 @@
                         <Image Source="/Assets/Website/GameDevelopers/Kinelco.jpg" Width="360" Height="190" Stretch="Fill"/>
                         <TextBlock Name="KinelcoText" Text="Kinelco" Foreground="White" FontSize="25" TextAlignment="Center" Margin="5"/>
                     </StackPanel>
-                    <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="2" Margin="10">
-                        <!--MouseDown="Xform_Click"-->
+                    <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="2" Margin="10" MouseDown="Xform_Click">
                         <Image Source="/Assets/Website/GameDevelopers/Xform.jpg" Width="360" Height="190" Stretch="Fill"/>
                         <TextBlock Name="XformText" Text="Xform Games" Foreground="White" FontSize="25" TextAlignment="Center" Margin="5"/>
                     </StackPanel>
