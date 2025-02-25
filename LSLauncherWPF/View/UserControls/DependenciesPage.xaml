@@ -27,6 +27,15 @@
                     <TextBlock Name="UnityDependency" Margin="10" Foreground="White" FontSize="20" HorizontalAlignment="Center"/>
                 </StackPanel>
             </Border>
+            <Border CornerRadius="15" Margin="15" Background="#0CFFFFFF" Height="100" Width="Auto">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel x:Name="CheckBasiliskStackPanel" Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Name="CheckBasiliskInstalledButton" Click="IfBasiliskInstalled_Click" FontSize="20" Margin="10" HorizontalAlignment="Center" Foreground="White" Content="Check if Basilisk 32bit is installed"/>
+                        <Button Name="InstallBasiliskButton" Click="InstallBasiliskButton_Click" FontSize="20" Margin="10" Foreground="White" Content="Install the Basilisk 32bit browser!"/>
+                    </StackPanel>
+                    <TextBlock Name="BasiliskDependency" Margin="10" Foreground="White" FontSize="20" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Border>
             <Border CornerRadius="15" Margin="15" Background="#0CFFFFFF" Height="Auto" Width="Auto">
                 <StackPanel Orientation="Vertical">
                     <TextBlock TextWrapping="Wrap" FontSize="25" FontWeight="Bold" Foreground="White" Margin="15,5,15,0">Your game crashes on startup or has a black screen (especially for NVidia GPUs but not limited to them)?</TextBlock>

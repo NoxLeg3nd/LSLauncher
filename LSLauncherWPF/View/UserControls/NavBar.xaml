@@ -15,7 +15,7 @@
                 </StackPanel>
                 <Button Name="HomeButton" Click="HomeButton_Click" Content="Home" Margin="5" Background="Transparent" VerticalAlignment="Center" Foreground="White" BorderThickness="0"/>
                 <Button Name="SwGamesButton" Click="SwGamesButton_Click" Content="Shockwave Games" Margin="5" Background="Transparent" Foreground="White" BorderThickness="0"/>
-                <Button Name="UnityGamesButton" Content="Unity Games" Margin="5" Background="Transparent" Foreground="White" BorderThickness="0"/>
+                <Button Name="UnityGamesButton" Click="UnityGamesButton_Click" Content="Unity Games" Margin="5" Background="Transparent" Foreground="White" BorderThickness="0"/>
                 <Button Name="ModsButton" Click="ModsButton_Click" Content="Burnin' Rubber Mods" Margin="5" Background="Transparent" Foreground="White" BorderThickness="0"/>
                 <Button Name="DependenciesButton" Click="DependeciesButton_Click" Content="Dependencies" Margin="5" Background="Transparent" Foreground="White" BorderThickness="0"/>
                 <Button Name="AboutButton" Content="About" Margin="5" Background="Transparent" Foreground="White" BorderThickness="0"/>

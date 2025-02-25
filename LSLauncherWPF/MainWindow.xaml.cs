@@ -41,6 +41,13 @@ namespace LSLauncherWPF
             currentPageType = typeof(SwGamesPage);
         }
 
+        public void LoadUnityGames()
+        {
+            var unityGamesPage = new UnityGamesPage();
+            MainContentControl.Content = unityGamesPage;
+            currentPageType = typeof(UnityGamesPage);
+        }
+
         public void LoadXform()
         {
             var xformPage = new XformPage(6);
@@ -70,6 +77,9 @@ namespace LSLauncherWPF
                 case nameof(SwGamesPage):
                     LoadSwGames();
                     break;
+                case nameof(UnityGamesPage):
+                    LoadUnityGames();
+                    break;
                 case nameof(DependenciesPage):
                     LoadDependencies();
                     break;
@@ -80,15 +90,6 @@ namespace LSLauncherWPF
             {
                 homePage.Cleanup();
             }
-            if (currentPageType == typeof(HomePage))
-            {
-                LoadHome();
-            }
-            else if (currentPageType == typeof(SwGamesPage))
-            {
-                LoadSwGames();
-            }
-            
         }
     }
 }

@@ -36,6 +36,11 @@ namespace LSLauncherWPF.View.UserControls
             ((MainWindow)Application.Current.MainWindow).LoadSwGames();
         }
 
+        private void UnityGamesButton_Click(object sender, RoutedEventArgs e)
+        {
+            ((MainWindow)Application.Current.MainWindow).LoadUnityGames();
+        }
+
         private void DependeciesButton_Click(object sender, RoutedEventArgs e)
         {
             ((MainWindow)Application.Current.MainWindow).LoadDependencies();

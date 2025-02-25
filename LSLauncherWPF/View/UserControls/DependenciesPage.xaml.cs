@@ -30,6 +30,7 @@ namespace LSLauncherWPF.View.UserControls
 
         bool isSwInstalled = false;
         bool isUnityInstalled = false;
+        bool isBasiliskInstalled = false;
 
         private void IfSwInstalled_Click(object sender, RoutedEventArgs e)
         {
@@ -72,6 +73,27 @@ namespace LSLauncherWPF.View.UserControls
             }
         }
 
+        private void IfBasiliskInstalled_Click(object sender, RoutedEventArgs e)
+        {
+
+            string pathBasilisk = "C:/Program Files (x86)/Basilisk";
+            if (Directory.Exists(pathBasilisk))
+            {
+                InstallBasiliskButton.Visibility = Visibility.Collapsed;
+                CheckBasiliskInstalledButton.HorizontalAlignment = HorizontalAlignment.Center;
+                BasiliskDependency.Text = $"The Basilisk Web Browser is properly installed at path {pathBasilisk}!";
+                BasiliskDependency.Foreground = System.Windows.Media.Brushes.Green;
+                isBasiliskInstalled = true;
+            }
+            else
+            {
+                InstallBasiliskButton.Visibility = Visibility.Visible;
+                BasiliskDependency.Text = "The Basilisk Web Browser is not installed!";
+                BasiliskDependency.Foreground = System.Windows.Media.Brushes.Red;
+                isBasiliskInstalled = false;
+            }
+        }
+
         private void InstallSwButton_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you want to install Shockwave 12?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Information);
@@ -88,6 +110,16 @@ namespace LSLauncherWPF.View.UserControls
                 Process.Start("Assets/GameDependencies/unitywebplayer26.exe");
             }
         }
+
+        private void InstallBasiliskButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you want to install the Basilisk 32bit Web Browser?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Information);
+            if (messageBoxResult == MessageBoxResult.Yes)
+            {
+                Process.Start("Assets/GameDependencies/basilisk-20250220144852.win32.installer.exe");
+            }
+        }
+
         private void RegistryInfo_Click(object sender, RoutedEventArgs e)
         {
             BrowserWindow browserWindow = new BrowserWindow("https://gaming.stackexchange.com/a/339841");
@@ -140,6 +172,23 @@ namespace LSLauncherWPF.View.UserControls
                 UnityDependency.Text = "Unity Web Player is not installed!";
                 UnityDependency.Foreground = System.Windows.Media.Brushes.Red;
                 isUnityInstalled = false;
+            }
+
+            string pathBasilisk = "C:/Program Files (x86)/Basilisk";
+            if (Directory.Exists(pathBasilisk))
+            {
+                InstallBasiliskButton.Visibility = Visibility.Collapsed;
+                CheckBasiliskInstalledButton.HorizontalAlignment = HorizontalAlignment.Center;
+                BasiliskDependency.Text = $"The Basilisk Web Browser is properly installed at path {pathBasilisk}!";
+                BasiliskDependency.Foreground = System.Windows.Media.Brushes.Green;
+                isBasiliskInstalled = true;
+            }
+            else
+            {
+                InstallBasiliskButton.Visibility = Visibility.Visible;
+                BasiliskDependency.Text = "The Basilisk Web Browser is not installed!";
+                BasiliskDependency.Foreground = System.Windows.Media.Brushes.Red;
+                isBasiliskInstalled = false;
             }
         }
     }

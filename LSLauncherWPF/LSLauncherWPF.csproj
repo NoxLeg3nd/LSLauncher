@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <None Remove="Assets\App\LSlogo.png" />
+    <None Remove="Assets\GameDependencies\basilisk-20250220144852.win32.installer.exe" />
     <None Remove="Assets\GameDependencies\NVidiaShockwaveFix.exe" />
     <None Remove="Assets\GameDependencies\Shockwave_Installer_Full.exe" />
     <None Remove="Assets\GameDependencies\unitywebplayer26.exe" />
@@ -24,19 +25,25 @@
     <None Remove="Assets\Website\GameDevelopers\Gamevial.jpg" />
     <None Remove="Assets\Website\GameDevelopers\Inludo.jpg" />
     <None Remove="Assets\Website\GameDevelopers\Kinelco.jpg" />
+    <None Remove="Assets\Website\GameDevelopers\M2H.png" />
     <None Remove="Assets\Website\GameDevelopers\OP.jpg" />
     <None Remove="Assets\Website\GameDevelopers\Other.png" />
     <None Remove="Assets\Website\GameDevelopers\RJS.jpg" />
     <None Remove="Assets\Website\GameDevelopers\SBS.png" />
+    <None Remove="Assets\Website\GameDevelopers\Soulkey.png" />
     <None Remove="Assets\Website\GameDevelopers\Xform.jpg" />
     <None Remove="Assets\Website\lsgif3_cropped.mp4" />
     <None Remove="Assets\Website\lsgif3_cropped.wmv" />
     <None Remove="Assets\Website\LSJoinDiscord.png" />
     <None Remove="Assets\Website\LSLogo.png" />
+    <None Remove="Assets\Website\LSLUnity.mp4" />
     <None Remove="Databases\lsdb.db" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Assets\GameDependencies\basilisk-20250220144852.win32.installer.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\GameDependencies\NVidiaShockwaveFix.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -64,6 +71,9 @@
     <Content Include="Assets\Website\GameDevelopers\Kinelco.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Website\GameDevelopers\M2H.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Website\GameDevelopers\OP.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -76,6 +86,9 @@
     <Content Include="Assets\Website\GameDevelopers\SBS.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Website\GameDevelopers\Soulkey.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Website\GameDevelopers\Xform.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -86,6 +99,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Website\LSJoinDiscord.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Website\LSLUnity.mp4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Databases\lsdb.db">
