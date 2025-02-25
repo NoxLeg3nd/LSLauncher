@@ -10,7 +10,7 @@ A launcher for LegacyShockwave aiming to implement the website functionalities i
 
 **Getting Started**
 
-1. **Download**: Obtain the latest version of the LegacyShockwave Launcher from the [GitHub repository](https://github.com/YourUsername/LegacyShockwaveLauncher).
+1. **Download**: Obtain the latest version of the LegacyShockwave Launcher from the [GitHub repository](https://github.com/NoxLeg3nd/LSLauncher).
 2. **Installation**: Run the installer and follow the on-screen instructions to set up the launcher on your system.
 3. **Launch**: Open the application to access the list of available games and start playing.
 
