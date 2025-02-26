@@ -21,6 +21,7 @@
     <None Remove="Assets\Games\Xform\br2.png" />
     <None Remove="Assets\Games\Xform\br3.png" />
     <None Remove="Assets\Games\Xform\br4.png" />
+    <None Remove="Assets\Games\Xform\brcnb.png" />
     <None Remove="Assets\Website\DependenciesHeader.png" />
     <None Remove="Assets\Website\DiagonalLineHeader.gif" />
     <None Remove="Assets\Website\GameDevelopers\Gamevial.jpg" />
@@ -67,6 +68,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Games\Xform\br4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Games\Xform\brcnb.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Website\DependenciesHeader.png">

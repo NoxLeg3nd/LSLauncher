@@ -63,9 +63,48 @@ namespace LSLauncherWPF
                                 {
                                     Id = reader.GetInt32(0),
                                     DeveloperId = reader.GetInt32(1),
-                                    ImagePath = reader.GetString(2),
-                                    GameName = reader.GetString(3),
-                                    GameLink = reader.GetString(4)
+                                    Platform = reader.GetString(2),
+                                    ImagePath = reader.GetString(3),
+                                    GameName = reader.GetString(4),
+                                    GameLink = reader.GetString(5)
+                                });
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
+            return games;
+        }
+
+        public List<Games> GetGamesByDeveloperAndPlatform(int gameDeveloperId, string platform)
+        {
+            List<Games> games = new List<Games>();
+            try
+            {
+                using (var conn = new SQLiteConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = $"SELECT * FROM Games WHERE DeveloperId = @DeveloperId AND Platform = @Platform";
+                    using (var cmd = new SQLiteCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@DeveloperId", gameDeveloperId);
+                        cmd.Parameters.AddWithValue("@Platform", platform);
+                        using (var reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                games.Add(new Games
+                                {
+                                    Id = reader.GetInt32(0),
+                                    DeveloperId = reader.GetInt32(1),
+                                    Platform = reader.GetString(2),
+                                    ImagePath = reader.GetString(3),
+                                    GameName = reader.GetString(4),
+                                    GameLink = reader.GetString(5)
                                 });
                             }
                         }
@@ -89,6 +128,7 @@ namespace LSLauncherWPF
     {
         public int Id { get; set; }
         public int DeveloperId { get; set; }
+        public string Platform { get; set; }
         public string ImagePath { get; set; }
         public string GameName { get; set; }
         public string GameLink { get; set; }

@@ -55,7 +55,7 @@ namespace LSLauncherWPF.View.UserControls
 
         private void Xform_Click(object sender, RoutedEventArgs e)
         {
-            ((MainWindow)Application.Current.MainWindow).LoadXform();
+            ((MainWindow)Application.Current.MainWindow).UnityLoadXform();
         }
 
         private void UnityInfo_Click(object sender, RoutedEventArgs e)

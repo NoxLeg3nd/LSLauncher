@@ -22,16 +22,18 @@ namespace LSLauncherWPF.View.UserControls
     public partial class XformPage : UserControl
     {
         private DatabaseHelper _databaseHelper = new DatabaseHelper();
+        public string Platform { get; private set; }
 
-        public XformPage(int developerId)
+        public XformPage(int developerId, string platform)
         {
             InitializeComponent();
-            LoadGames(developerId);
+            Platform = platform;
+            LoadGames(developerId, platform);
         }
 
-        private void LoadGames(int developerId)
+        private void LoadGames(int developerId, string platform)
         {
-            var games = _databaseHelper.GetGamesByDeveloper(developerId);
+            var games = _databaseHelper.GetGamesByDeveloperAndPlatform(developerId, platform);
             foreach (var game in games)
             {
                 GamesPanel.Children.Add(CreateGameCard(game));

@@ -48,9 +48,16 @@ namespace LSLauncherWPF
             currentPageType = typeof(UnityGamesPage);
         }
 
-        public void LoadXform()
+        public void SwLoadXform()
         {
-            var xformPage = new XformPage(6);
+            var xformPage = new XformPage(6, "Shockwave");
+            MainContentControl.Content = xformPage;
+            currentPageType = typeof(XformPage);
+        }
+
+        public void UnityLoadXform()
+        {
+            var xformPage = new XformPage(6, "Unity");
             MainContentControl.Content = xformPage;
             currentPageType = typeof(XformPage);
         }
@@ -84,7 +91,17 @@ namespace LSLauncherWPF
                     LoadDependencies();
                     break;
                 case nameof(XformPage):
-                    LoadXform();
+                    if (MainContentControl.Content is XformPage xformPage)
+                    {
+                        if (xformPage.Platform == "Shockwave")
+                        {
+                            SwLoadXform();
+                        }
+                        else if (xformPage.Platform == "Unity")
+                        {
+                            UnityLoadXform();
+                        }
+                    }
                     break;
                 default:
                     throw new InvalidOperationException($"Unhandled page type: {currentPageType.Name}");

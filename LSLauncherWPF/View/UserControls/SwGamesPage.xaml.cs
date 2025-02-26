@@ -46,7 +46,7 @@ namespace LSLauncherWPF.View.UserControls
         
         private void Xform_Click(object sender, RoutedEventArgs e)
         {
-            ((MainWindow)Application.Current.MainWindow).LoadXform();
+            ((MainWindow)Application.Current.MainWindow).SwLoadXform();
         }
 
         private void DiscordJoin_Click(object sender, RoutedEventArgs e)
