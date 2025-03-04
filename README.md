@@ -24,5 +24,4 @@ For more information or to get in touch:
 
 - **Website**: [https://sites.google.com/view/legacyshockwave](https://sites.google.com/view/legacyshockwave)
 - **Email**: legacyshockwave@gmail.com
-- **Discord**: [Join our Discord server](https://discord.gg/CkuncqR)
 
