@@ -60,7 +60,7 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="0" Margin="10">
+                    <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="0" Margin="10" MouseDown="SBS_Click">
                         <Image Source="/Assets/Website/GameDevelopers/SBS.png" Width="360" Height="190" Stretch="Fill"/>
                         <TextBlock Name="SBSText" Text="Silent Bay Studios" Foreground="White" FontSize="25" TextAlignment="Center" Margin="5"/>
                     </StackPanel>

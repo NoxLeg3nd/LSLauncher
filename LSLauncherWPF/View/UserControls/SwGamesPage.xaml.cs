@@ -49,6 +49,10 @@ namespace LSLauncherWPF.View.UserControls
             ((MainWindow)Application.Current.MainWindow).SwLoadXform();
         }
 
+        private void SBS_Click(object sender, RoutedEventArgs e)
+        {
+            ((MainWindow)Application.Current.MainWindow).SwLoadSBS();
+        }
         private void DiscordJoin_Click(object sender, RoutedEventArgs e)
         {
             Process.Start(new ProcessStartInfo

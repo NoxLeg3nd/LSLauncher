@@ -48,12 +48,27 @@ namespace LSLauncherWPF
             currentPageType = typeof(UnityGamesPage);
         }
 
+        public void SwLoadSBS()
+        {
+            var sbsPage = new SBSPage(1, "Shockwave");
+            MainContentControl.Content = sbsPage;
+            currentPageType = typeof(SBSPage);
+        }
+
+        public void UnityLoadSBS()
+        {
+            var sbsPage = new SBSPage(1, "Unity");
+            MainContentControl.Content = sbsPage;
+            currentPageType = typeof(SBSPage);
+        }
+
         public void SwLoadXform()
         {
             var xformPage = new XformPage(6, "Shockwave");
             MainContentControl.Content = xformPage;
             currentPageType = typeof(XformPage);
         }
+
 
         public void UnityLoadXform()
         {

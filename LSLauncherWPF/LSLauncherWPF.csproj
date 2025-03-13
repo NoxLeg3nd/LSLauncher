@@ -17,6 +17,8 @@
     <None Remove="Assets\GameDependencies\NVidiaShockwaveFix.exe" />
     <None Remove="Assets\GameDependencies\Shockwave_Installer_Full.exe" />
     <None Remove="Assets\GameDependencies\unitywebplayer26.exe" />
+    <None Remove="Assets\Games\SBS\AOSUnderworld.png" />
+    <None Remove="Assets\Games\SBS\SSAE.png" />
     <None Remove="Assets\Games\Xform\br1.png" />
     <None Remove="Assets\Games\Xform\br2.png" />
     <None Remove="Assets\Games\Xform\br3.png" />
@@ -56,6 +58,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\GameDependencies\unitywebplayer26.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Games\SBS\AOSUnderworld.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Games\SBS\SSAE.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Games\Xform\br1.png">

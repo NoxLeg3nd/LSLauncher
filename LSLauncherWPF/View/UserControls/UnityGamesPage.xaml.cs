@@ -58,6 +58,11 @@ namespace LSLauncherWPF.View.UserControls
             ((MainWindow)Application.Current.MainWindow).UnityLoadXform();
         }
 
+        private void SBS_Click(object sender, RoutedEventArgs e)
+        {
+            ((MainWindow)Application.Current.MainWindow).UnityLoadSBS();
+        }
+
         private void UnityInfo_Click(object sender, RoutedEventArgs e)
         {
             BrowserWindow browserWindow = new BrowserWindow("https://en.wikipedia.org/wiki/Unity_(game_engine)");
