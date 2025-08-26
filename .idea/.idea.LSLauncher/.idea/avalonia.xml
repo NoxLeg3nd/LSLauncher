@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="LSLauncher/App.axaml" value="LSLauncher/LSLauncher.csproj" />
+        <entry key="LSLauncher/MainWindow.axaml" value="LSLauncher/LSLauncher.csproj" />
+        <entry key="LSLauncher/Views/MainWindow.axaml" value="LSLauncher/LSLauncher.csproj" />
+        <entry key="LSLauncher/Views/UserControls/NavBar.axaml" value="LSLauncher/LSLauncher.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,17 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="55"
+             x:Class="LSLauncher.Views.UserControls.NavBar"
+             Width="1200" Height="55">
+    <Grid>
+            <StackPanel Height="55" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                <Button Content="Home" Margin="5"/>
+                <Button Content="Shockwave Games" Margin="5"/>
+                <Button Content="Unity Games" Margin="5"/>
+                <Button Content="Burnin' Rubber Mod Hub"/>
+                <Button Content="Dependencies" Margin="5"/>
+            </StackPanel>
+    </Grid>
+</UserControl>
