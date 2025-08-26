@@ -18,6 +18,8 @@ A launcher for LegacyShockwave aiming to implement the website functionalities i
 
 We welcome contributions from the community. If you have suggestions, improvements, or bug fixes, please fork the repository, make your changes, and submit a pull request.
 
+- To compile without any IDE use the following command: ``dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true /p:IncludeAllContentForSelfExtract=false``
+
 ***Contact***
 
 For more information or to get in touch:

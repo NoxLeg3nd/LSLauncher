@@ -22,6 +22,8 @@ __pycache__/
 *.userprefs
 mono_crash.*
 [Dd]ebug/
+LSLauncher/bin/Debug/
+LSLauncher/bin/Release/
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/

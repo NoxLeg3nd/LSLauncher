@@ -8,6 +8,13 @@
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
     </PropertyGroup>
 
+    <PropertyGroup>
+      <PublishSingleFile>true</PublishSingleFile>
+      <SelfContained>true</SelfContained>
+      <RuntimeIdentifier>win-x64</RuntimeIdentifier> <!-- or win-arm64 / linux-x64 / osx-x64 etc. -->
+      <PublishTrimmed>false</PublishTrimmed> <!-- optional: set true for smaller size, but can break reflection -->
+    </PropertyGroup>
+
     <ItemGroup>
         <PackageReference Include="Avalonia" Version="11.3.4"/>
         <PackageReference Include="Avalonia.Desktop" Version="11.3.4"/>
