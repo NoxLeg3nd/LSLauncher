@@ -7,7 +7,7 @@
     <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
-    <ApplicationIcon>Assets\LSLogo.ico</ApplicationIcon>
+    <ApplicationIcon>Assets\BRANDING\LSLogo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="11.3.4" />
@@ -24,13 +24,18 @@
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\SplashWindow.axaml.cs">
+      <DependentUpon>SplashWindow.axaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\MainWindow.axaml.cs">
       <DependentUpon>MainWindow.axaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <AvaloniaResource Include="Assets\LSLogo.ico" />
+    <AvaloniaResource Include="Assets\BRANDING\LSLogo.ico" />
+    <AvaloniaResource Include="Assets\BRANDING\LSLogo.png" />
     <AvaloniaResource Include="Assets\GUI\sun.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </AvaloniaResource>

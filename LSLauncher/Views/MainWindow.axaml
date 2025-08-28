@@ -14,7 +14,7 @@
                 WindowStartupLocation="CenterScreen"
                 ShowInTaskbar="True"
                 Topmost="False"
-                Icon="avares://LSLauncher/Assets/LSLogo.ico">
+                Icon="avares://LSLauncher/Assets/BRANDING/LSLogo.ico">
         <Grid>
                 <views:NavBar Name="NavBarUserControl" VerticalAlignment="Top" HorizontalAlignment="Stretch"/>
         </Grid> 

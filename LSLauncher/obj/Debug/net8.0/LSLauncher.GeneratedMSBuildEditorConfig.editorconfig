@@ -25,5 +25,8 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [c:/Users/ramaz/Documents/GitHub/LSLauncher/LSLauncher/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[c:/Users/ramaz/Documents/GitHub/LSLauncher/LSLauncher/Views/SplashWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [c:/Users/ramaz/Documents/GitHub/LSLauncher/LSLauncher/Views/UserControls/NavBar.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
