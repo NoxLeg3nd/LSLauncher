@@ -1,0 +1,40 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <StackPanel Height="50" Width="1200" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#0043A1">
+            <Button Classes="navbarbutton" Content="Home" Margin="5" Padding="10"/>
+            <Button Classes="navbarbutton" Content="Shockwave Games" Margin="5" Padding="10"/>
+            <Button Classes="navbarbutton" Content="Unity Games" Margin="5" Padding="10"/>
+            <Button Classes="navbarbutton" Content="Burnin' Rubber Mod Hub" Margin="5" Padding="10"/>
+            <Button Classes="navbarbutton" Content="Dependencies" Margin="5" Padding="10"/>
+            <Button Classes="navbarbutton">
+                <Image Source="avares://LSLauncher/Assets/moon.png" Stretch="Uniform"></Image>
+            </Button>
+        </StackPanel>
+    </Design.PreviewWith>
+    
+    <Style Selector="Button.navbarbutton">
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,40">
+                    <GradientStop Offset="0" Color="#0043A1"/>
+                    <GradientStop Offset="1" Color="#3287FC"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Transitions">
+            <Setter.Value>
+                <Transitions>
+                    <BrushTransition Property="Background" Duration="0:0:0.125"/>
+                </Transitions>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Foreground" Value="White"></Setter>
+        <Setter Property="FontFamily" Value="Arial Rounded MT"></Setter>
+        <Setter Property="FontSize" Value="16"></Setter>
+        <Setter Property="CornerRadius" Value="3"></Setter>
+    </Style>
+    <Style Selector="Button.navbarbutton:pointerover">
+        <Setter Property="Background" Value="#0043A1"></Setter>
+    </Style>
+</Styles>

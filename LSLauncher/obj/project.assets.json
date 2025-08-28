@@ -1422,11 +1422,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LSLauncher\\LSLauncher\\LSLauncher.csproj",
+      "projectUniqueName": "C:\\Users\\Mihai\\RiderProjects\\LSLauncher\\LSLauncher\\LSLauncher.csproj",
       "projectName": "LSLauncher",
-      "projectPath": "D:\\LSLauncher\\LSLauncher\\LSLauncher.csproj",
+      "projectPath": "C:\\Users\\Mihai\\RiderProjects\\LSLauncher\\LSLauncher\\LSLauncher.csproj",
       "packagesPath": "C:\\Users\\Mihai\\.nuget\\packages\\",
-      "outputPath": "D:\\LSLauncher\\LSLauncher\\obj\\",
+      "outputPath": "C:\\Users\\Mihai\\RiderProjects\\LSLauncher\\LSLauncher\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

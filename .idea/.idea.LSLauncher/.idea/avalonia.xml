@@ -5,6 +5,8 @@
       <map>
         <entry key="LSLauncher/App.axaml" value="LSLauncher/LSLauncher.csproj" />
         <entry key="LSLauncher/MainWindow.axaml" value="LSLauncher/LSLauncher.csproj" />
+        <entry key="LSLauncher/Styles/NavBarDark.axaml" value="LSLauncher/LSLauncher.csproj" />
+        <entry key="LSLauncher/Styles/NavBarLight.axaml" value="LSLauncher/LSLauncher.csproj" />
         <entry key="LSLauncher/Views/MainWindow.axaml" value="LSLauncher/LSLauncher.csproj" />
         <entry key="LSLauncher/Views/UserControls/NavBar.axaml" value="LSLauncher/LSLauncher.csproj" />
       </map>
