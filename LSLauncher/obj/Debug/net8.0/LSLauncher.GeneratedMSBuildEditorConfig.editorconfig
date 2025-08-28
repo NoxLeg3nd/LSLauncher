@@ -1,4 +1,8 @@
 is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = 
+build_property.IncludeAllContentForSelfExtract = 
 build_property.AvaloniaNameGeneratorIsEnabled = true
 build_property.AvaloniaNameGeneratorBehavior = InitializeComponent
 build_property.AvaloniaNameGeneratorDefaultFieldModifier = internal
@@ -15,17 +19,15 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LSLauncher
-build_property.ProjectDir = C:\Users\Mihai\RiderProjects\LSLauncher\LSLauncher\
+build_property.ProjectDir = C:\Users\ramaz\Documents\GitHub\LSLauncher\LSLauncher\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Mihai/RiderProjects/LSLauncher/LSLauncher/App.axaml]
+[C:/Users/ramaz/Documents/GitHub/LSLauncher/LSLauncher/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/Mihai/RiderProjects/LSLauncher/LSLauncher/Views/MainWindow.axaml]
+[C:/Users/ramaz/Documents/GitHub/LSLauncher/LSLauncher/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/Mihai/RiderProjects/LSLauncher/LSLauncher/Views/UserControls/NavBar.axaml]
+[C:/Users/ramaz/Documents/GitHub/LSLauncher/LSLauncher/Views/UserControls/NavBar.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

@@ -1,55 +1,61 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-    <PropertyGroup>
-        <OutputType>WinExe</OutputType>
-        <TargetFramework>net8.0</TargetFramework>
-        <Nullable>enable</Nullable>
-        <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
-        <ApplicationManifest>app.manifest</ApplicationManifest>
-        <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
-    </PropertyGroup>
-
-    <ItemGroup>
-        <PackageReference Include="Avalonia" Version="11.3.4"/>
-        <PackageReference Include="Avalonia.Desktop" Version="11.3.4"/>
-        <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.4"/>
-        <PackageReference Include="Avalonia.Fonts.Inter" Version="11.3.4"/>
-        <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
-        <PackageReference Include="Avalonia.Diagnostics" Version="11.3.4">
-            <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
-            <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
-        </PackageReference>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="ViewModels\" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Compile Update="Views\MainWindow.axaml.cs">
-        <DependentUpon>MainWindow.axaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Remove="Assets\sun.png" />
-      <AvaloniaResource Include="Assets\sun.png">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </AvaloniaResource>
-      <AvaloniaXaml Remove="Styles\NavBarLight.axaml" />
-      <AvaloniaResource Include="Styles\NavBarLight.axaml">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </AvaloniaResource>
-      <None Remove="Assets\moon.png" />
-      <Resource Include="Assets\moon.png">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Resource>
-      <AvaloniaXaml Update="App.axaml">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </AvaloniaXaml>
-      <AvaloniaXaml Remove="Styles\NavBarDark.axaml" />
-      <AvaloniaResource Include="Styles\NavBarDark.axaml">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </AvaloniaResource>
-    </ItemGroup>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    <ApplicationIcon>Assets\LSLogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.3.4" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.3.4" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.4" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="11.3.4" />
+    <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+    <PackageReference Include="Avalonia.Diagnostics" Version="11.3.4">
+      <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
+      <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\MainWindow.axaml.cs">
+      <DependentUpon>MainWindow.axaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Assets\LSLogo.ico" />
+    <Resource Include="Assets\LSLogo.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <None Remove="Assets\LSLogo.png" />
+    <Resource Include="Assets\LSLogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <None Remove="Assets\sun.png" />
+    <AvaloniaResource Include="Assets\sun.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AvaloniaResource>
+    <AvaloniaXaml Remove="Styles\NavBarLight.axaml" />
+    <AvaloniaResource Include="Styles\NavBarLight.axaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AvaloniaResource>
+    <None Remove="Assets\moon.png" />
+    <Resource Include="Assets\moon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <AvaloniaXaml Update="App.axaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AvaloniaXaml>
+    <AvaloniaXaml Remove="Styles\NavBarDark.axaml" />
+    <AvaloniaResource Include="Styles\NavBarDark.axaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AvaloniaResource>
+  </ItemGroup>
 </Project>
