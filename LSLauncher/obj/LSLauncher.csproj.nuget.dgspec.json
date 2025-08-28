@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mihai\\RiderProjects\\LSLauncher\\LSLauncher\\LSLauncher.csproj": {}
+    "C:\\Users\\ramaz\\Documents\\GitHub\\LSLauncher\\LSLauncher\\LSLauncher.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mihai\\RiderProjects\\LSLauncher\\LSLauncher\\LSLauncher.csproj": {
+    "C:\\Users\\ramaz\\Documents\\GitHub\\LSLauncher\\LSLauncher\\LSLauncher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mihai\\RiderProjects\\LSLauncher\\LSLauncher\\LSLauncher.csproj",
+        "projectUniqueName": "C:\\Users\\ramaz\\Documents\\GitHub\\LSLauncher\\LSLauncher\\LSLauncher.csproj",
         "projectName": "LSLauncher",
-        "projectPath": "C:\\Users\\Mihai\\RiderProjects\\LSLauncher\\LSLauncher\\LSLauncher.csproj",
-        "packagesPath": "C:\\Users\\Mihai\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mihai\\RiderProjects\\LSLauncher\\LSLauncher\\obj\\",
+        "projectPath": "C:\\Users\\ramaz\\Documents\\GitHub\\LSLauncher\\LSLauncher\\LSLauncher.csproj",
+        "packagesPath": "C:\\Users\\ramaz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ramaz\\Documents\\GitHub\\LSLauncher\\LSLauncher\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Mihai\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ramaz\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,8 +37,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -59,6 +52,8 @@
               "version": "[11.3.4, )"
             },
             "Avalonia.Diagnostics": {
+              "include": "None",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[11.3.4, )"
             },
@@ -69,6 +64,12 @@
             "Avalonia.Themes.Fluent": {
               "target": "Package",
               "version": "[11.3.4, )"
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.19, )",
+              "autoReferenced": true
             }
           },
           "imports": [
@@ -82,12 +83,31 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[8.0.19, 8.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[8.0.19, 8.0.19]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[8.0.19, 8.0.19]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }
