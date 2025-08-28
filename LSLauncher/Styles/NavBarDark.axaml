@@ -8,7 +8,7 @@
             <Button Classes="navbarbutton" Content="Burnin' Rubber Mod Hub" Margin="5" Padding="10"/>
             <Button Classes="navbarbutton" Content="Dependencies" Margin="5" Padding="10"/>
             <Button Classes="navbarbutton" Padding="5" Margin="5">
-                <Image Source="avares://LSLauncher/Assets/moon.png" Stretch="Uniform"></Image>
+                <Image Source="avares://LSLauncher/Assets/GUI/moon.png" Stretch="Uniform"></Image>
             </Button>
         </StackPanel>
     </Design.PreviewWith>

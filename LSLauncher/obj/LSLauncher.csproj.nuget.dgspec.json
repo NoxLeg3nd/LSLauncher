@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ramaz\\Documents\\GitHub\\LSLauncher\\LSLauncher\\LSLauncher.csproj": {}
+    "c:\\Users\\ramaz\\Documents\\GitHub\\LSLauncher\\LSLauncher\\LSLauncher.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ramaz\\Documents\\GitHub\\LSLauncher\\LSLauncher\\LSLauncher.csproj": {
+    "c:\\Users\\ramaz\\Documents\\GitHub\\LSLauncher\\LSLauncher\\LSLauncher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ramaz\\Documents\\GitHub\\LSLauncher\\LSLauncher\\LSLauncher.csproj",
+        "projectUniqueName": "c:\\Users\\ramaz\\Documents\\GitHub\\LSLauncher\\LSLauncher\\LSLauncher.csproj",
         "projectName": "LSLauncher",
-        "projectPath": "C:\\Users\\ramaz\\Documents\\GitHub\\LSLauncher\\LSLauncher\\LSLauncher.csproj",
+        "projectPath": "c:\\Users\\ramaz\\Documents\\GitHub\\LSLauncher\\LSLauncher\\LSLauncher.csproj",
         "packagesPath": "C:\\Users\\ramaz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ramaz\\Documents\\GitHub\\LSLauncher\\LSLauncher\\obj\\",
+        "outputPath": "c:\\Users\\ramaz\\Documents\\GitHub\\LSLauncher\\LSLauncher\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ramaz\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -52,8 +52,6 @@
               "version": "[11.3.4, )"
             },
             "Avalonia.Diagnostics": {
-              "include": "None",
-              "suppressParent": "All",
               "target": "Package",
               "version": "[11.3.4, )"
             },
@@ -64,12 +62,6 @@
             "Avalonia.Themes.Fluent": {
               "target": "Package",
               "version": "[11.3.4, )"
-            },
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.19, )",
-              "autoReferenced": true
             }
           },
           "imports": [
@@ -83,31 +75,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[8.0.19, 8.0.19]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[8.0.19, 8.0.19]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[8.0.19, 8.0.19]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
         }
       }
     }

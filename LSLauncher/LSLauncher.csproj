@@ -30,26 +30,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Remove="Assets\LSLogo.ico" />
-    <Resource Include="Assets\LSLogo.ico">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <None Remove="Assets\LSLogo.png" />
-    <Resource Include="Assets\LSLogo.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <None Remove="Assets\sun.png" />
-    <AvaloniaResource Include="Assets\sun.png">
+    <AvaloniaResource Include="Assets\LSLogo.ico" />
+    <AvaloniaResource Include="Assets\GUI\sun.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </AvaloniaResource>
     <AvaloniaXaml Remove="Styles\NavBarLight.axaml" />
     <AvaloniaResource Include="Styles\NavBarLight.axaml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </AvaloniaResource>
-    <None Remove="Assets\moon.png" />
-    <Resource Include="Assets\moon.png">
+    <AvaloniaResource Include="Assets\GUI\moon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    </AvaloniaResource>
     <AvaloniaXaml Update="App.axaml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </AvaloniaXaml>

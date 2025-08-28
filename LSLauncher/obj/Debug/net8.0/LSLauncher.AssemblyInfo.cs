@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LSLauncher")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2bd17e18b6b9da4f3a023e92d0285279dda30435")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+adfa05024390db47bbe86559522f31b370ddc578")]
 [assembly: System.Reflection.AssemblyProductAttribute("LSLauncher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LSLauncher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
