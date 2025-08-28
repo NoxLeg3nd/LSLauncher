@@ -12,7 +12,7 @@
             <Button Classes="navbarbutton" Content="Unity Games" Margin="5" Padding="10"/>
             <Button Classes="navbarbutton" Content="Burnin' Rubber Mod Hub" Margin="5" Padding="10"/>
             <Button Classes="navbarbutton" Content="Dependencies" Margin="5" Padding="10"/>
-            <Button Classes="navbarbutton">
+            <Button Classes="navbarbutton" Margin="5" Padding="5">
                 <Image Source="avares://LSLauncher/Assets/sun.png" Stretch="Uniform"></Image>
             </Button>
         </StackPanel>
