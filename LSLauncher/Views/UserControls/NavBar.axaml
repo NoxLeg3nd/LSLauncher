@@ -7,13 +7,13 @@
              Height="50">
     <Grid>
         <StackPanel Height="50" Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Top" Background="#3287FC">
-            <Button Classes="navbarbutton" Content="Home" Margin="5" Padding="10"/>
-            <Button Classes="navbarbutton" Content="Shockwave Games" Margin="5" Padding="10"/>
-            <Button Classes="navbarbutton" Content="Unity Games" Margin="5" Padding="10"/>
-            <Button Classes="navbarbutton" Content="Burnin' Rubber Mod Hub" Margin="5" Padding="10"/>
-            <Button Classes="navbarbutton" Content="Dependencies" Margin="5" Padding="10"/>
+            <Button Name="HomeButton" Click="HomeButton_OnClick" Classes="navbarbutton" Content="Home" Margin="5" Padding="10" />
+            <Button Name="SwGamesButton" Click="SwGamesButton_OnClick" Classes="navbarbutton" Content="Shockwave Games" Margin="5" Padding="10"/>
+            <Button Name="UnityGamesButton" Click="UnityGamesButton_OnClick" Classes="navbarbutton" Content="Unity Games" Margin="5" Padding="10"/>
+            <Button Name="ModsButton" Click="ModsButton_OnClick" Classes="navbarbutton" Content="Burnin' Rubber Mod Hub" Margin="5" Padding="10"/>
+            <Button Name="DependenciesButton" Click="DependenciesButton_OnClick" Classes="navbarbutton" Content="Dependencies" Margin="5" Padding="10"/>
             <Button Classes="navbarbutton" Margin="5" Padding="5">
-                <Image Source="avares://LSLauncher/Assets/GUI/sun.png" Stretch="Uniform"></Image>
+                <Image Source="avares://LSLauncher/Assets/GUI/sun.png" Stretch="Uniform"/>
             </Button>
         </StackPanel>
     </Grid>

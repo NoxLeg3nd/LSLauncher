@@ -10,13 +10,13 @@ public partial class App : Application
     public override void Initialize()
     {
         AvaloniaXamlLoader.Load(this);
+        
     }
 
     public override void OnFrameworkInitializationCompleted()
     {
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
-            // SplashWindow'u göster
             var splash = new Views.SplashWindow();
             splash.Show();
         }

@@ -8,7 +8,9 @@
         <entry key="LSLauncher/Styles/NavBarDark.axaml" value="LSLauncher/LSLauncher.csproj" />
         <entry key="LSLauncher/Styles/NavBarLight.axaml" value="LSLauncher/LSLauncher.csproj" />
         <entry key="LSLauncher/Views/MainWindow.axaml" value="LSLauncher/LSLauncher.csproj" />
+        <entry key="LSLauncher/Views/UserControls/HomePage.axaml" value="LSLauncher/LSLauncher.csproj" />
         <entry key="LSLauncher/Views/UserControls/NavBar.axaml" value="LSLauncher/LSLauncher.csproj" />
+        <entry key="LSLauncher/Views/UserControls/SwGamesPage.axaml" value="LSLauncher/LSLauncher.csproj" />
       </map>
     </option>
   </component>

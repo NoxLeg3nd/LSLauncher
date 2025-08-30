@@ -15,7 +15,8 @@
                 ShowInTaskbar="True"
                 Topmost="False"
                 Icon="avares://LSLauncher/Assets/BRANDING/LSLogo.ico">
-        <Grid>
+        <StackPanel Orientation="Vertical">
                 <views:NavBar Name="NavBarUserControl" VerticalAlignment="Top" HorizontalAlignment="Stretch"/>
-        </Grid> 
+                <ContentControl Name="MainContentControl" VerticalAlignment="Top"/>
+        </StackPanel>
 </Window>
