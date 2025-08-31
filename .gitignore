@@ -11,3 +11,7 @@ LSLauncher/obj/Debug/net8.0/ref/LSLauncher.dll
 LSLauncher/obj/Debug/net8.0/LSLauncher.dll
 LSLauncher/obj/Debug/net8.0/LSLauncher.GeneratedMSBuildEditorConfig.editorconfig
 LSLauncher/obj/Debug/net8.0/refint/LSLauncher.dll
+/LSLauncher/obj
+/LSLauncher/obj
+LSLauncher/obj/Debug/net8.0/LSLauncher.AssemblyInfoInputs.cache
+LSLauncher/obj/Debug/net8.0/LSLauncher.AssemblyInfo.cs
