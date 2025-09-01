@@ -10,6 +10,8 @@ public partial class MainWindow : Window
         LoadHome();
         NavBarUserControl.HomeClicked += (_, __) => LoadHome();
         NavBarUserControl.SwGamesClicked += (_, __) => LoadSwGames();
+        NavBarUserControl.UnityGamesClicked += (_, __) => LoadUnityGames();
+        NavBarUserControl.DependenciesClicked += (_, __) => LoadDependencies();
     }
     public void LoadHome()
     {
@@ -18,5 +20,13 @@ public partial class MainWindow : Window
     public void LoadSwGames()
     {
         MainContentControl.Content = new SwGamesPage();
+    }
+    public void LoadUnityGames()
+    {
+        MainContentControl.Content = new UnityGamesPage();
+    }
+    public void LoadDependencies()
+    {
+        MainContentControl.Content = new DependenciesPage();
     }
 }

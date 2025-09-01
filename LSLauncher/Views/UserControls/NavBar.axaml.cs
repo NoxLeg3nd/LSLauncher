@@ -10,6 +10,8 @@ public partial class NavBar : UserControl
 {
     public event EventHandler? HomeClicked;
     public event EventHandler? SwGamesClicked;
+    public event EventHandler? UnityGamesClicked;
+    public event EventHandler? DependenciesClicked;
     public NavBar()
     {
         InitializeComponent();
@@ -27,16 +29,23 @@ public partial class NavBar : UserControl
 
     private void UnityGamesButton_OnClick(object? sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+       UnityGamesClicked?.Invoke(this, EventArgs.Empty);
     }
 
     private void ModsButton_OnClick(object? sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        if (OperatingSystem.IsWindows())
+        {
+            System.Diagnostics.Process.Start("https://sites.google.com/view/burnin-rubber-mod-hub/home");
+        }
+        else if (OperatingSystem.IsLinux())
+        {
+            System.Diagnostics.Process.Start("xdg-open", "https://sites.google.com/view/burnin-rubber-mod-hub/home");
+        }
     }
-
+    
     private void DependenciesButton_OnClick(object? sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        DependenciesClicked?.Invoke(this, EventArgs.Empty);
     }
 }
